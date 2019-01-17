@@ -27,28 +27,18 @@ root_volume_size = 2000
 #instance_types = ["m4", "r4"]
 instance_types = ["optimal"]
 
-job_image = 'broadinstitute/gatk'
-job_vcpus = 16
-job_memory = 64
-job_cmd = [
-    "count_genes.py", "Ref::out_prefix",
-    "Ref::s3_fq_1", "Ref::s3_fq_2",
-    "--threads", str(job_vcpus)
-]
+job_cmd = ["helloWorld.py"]
 
 user_data = """MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="==MYBOUNDARY=="
 --==MYBOUNDARY==
 Content-Type: text/x-shellscript; charset="us-ascii"
 #!/bin/bash
-mkdir -p /scratch
-echo '* soft nofile 1000000' >> /etc/security/limits.d/20-nfile.conf
-echo '* hard nofile 1000000' >> /etc/security/limits.d/20-nfile.conf
+
+sudo apt-get update
 yum install -y aws-cli
-aws s3 sync s3://jackkamm/ct-transcriptomics/ /scratch/ --exclude '*' \
-    --include 'star_genomeGenerate_grch38*' \
-    --include 'GCF_000068585.1_ASM6858v1_genomic.fna*' \
-    --include GCF_000068585.1_ASM6858v1_genomic.gff
+aws s3 cp s3://darmanis-group/singlecell_lungadeno/rawdata/CosmicGenomeScreensMutantExport.tsv/ ./
+
 --==MYBOUNDARY==--
 """
 

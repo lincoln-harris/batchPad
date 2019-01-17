@@ -1,18 +1,18 @@
 {
     "ResponseMetadata": {
-        "RequestId": "f4ee5d81-19e8-11e9-8222-2d29137f37f9",
+        "RequestId": "9817b250-1a01-11e9-aea2-8d4e8c6b0d31",
         "HTTPStatusCode": 200,
         "HTTPHeaders": {
-            "date": "Wed, 16 Jan 2019 23:46:34 GMT",
+            "date": "Thu, 17 Jan 2019 02:42:56 GMT",
             "content-type": "application/json",
-            "content-length": "191",
+            "content-length": "161",
             "connection": "keep-alive",
-            "x-amzn-requestid": "f4ee5d81-19e8-11e9-8222-2d29137f37f9",
-            "x-amz-apigw-id": "TntOHHL2vHcFydA=",
-            "x-amzn-trace-id": "Root=1-5c3fc25a-9a4b04dfcb189c9db5d3e040;Sampled=0"
+            "x-amzn-requestid": "9817b250-1a01-11e9-aea2-8d4e8c6b0d31",
+            "x-amz-apigw-id": "ToHDgFjNvHcFzRw=",
+            "x-amzn-trace-id": "Root=1-5c3febb0-ca38b65779816a9a0609e323;Sampled=0"
         },
         "RetryAttempts": 0
     },
-    "computeEnvironmentName": "jackkamm-ct-transcriptomics-environment",
-    "computeEnvironmentArn": "arn:aws:batch:us-west-2:423543210473:compute-environment/jackkamm-ct-transcriptomics-environment"
+    "computeEnvironmentName": "lincoln-test-environment",
+    "computeEnvironmentArn": "arn:aws:batch:us-west-2:423543210473:compute-environment/lincoln-test-environment"
 }

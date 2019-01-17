@@ -27,6 +27,9 @@ root_volume_size = 2000
 #instance_types = ["m4", "r4"]
 instance_types = ["optimal"]
 
+job_image = 'broadinstitute/gatk' # specify a registered Docker container, i think 
+job_vcpus = 1
+job_memory = 2
 job_cmd = ["helloWorld.py"]
 
 user_data = """MIME-Version: 1.0

@@ -1,20 +1,20 @@
 {
     "LaunchTemplate": {
-        "LaunchTemplateId": "lt-079777f1c62e9bd5a",
-        "LaunchTemplateName": "jackkamm-ct-transcriptomics-template",
-        "CreateTime": "2019-01-16 23:46:34+00:00",
+        "LaunchTemplateId": "lt-03ad4166a35502601",
+        "LaunchTemplateName": "lincoln-test-template",
+        "CreateTime": "2019-01-17 02:42:55+00:00",
         "CreatedBy": "arn:aws:iam::423543210473:user/lincoln.harris",
         "DefaultVersionNumber": 1,
         "LatestVersionNumber": 1
     },
     "ResponseMetadata": {
-        "RequestId": "63d150a1-e5f9-48ca-9124-5427af442b74",
+        "RequestId": "3b464c85-a23c-434f-b845-d5a387fc6782",
         "HTTPStatusCode": 200,
         "HTTPHeaders": {
             "content-type": "text/xml;charset=UTF-8",
             "transfer-encoding": "chunked",
             "vary": "Accept-Encoding",
-            "date": "Wed, 16 Jan 2019 23:46:34 GMT",
+            "date": "Thu, 17 Jan 2019 02:42:55 GMT",
             "server": "AmazonEC2"
         },
         "RetryAttempts": 0
